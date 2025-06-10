@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Math Guruji</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/slick-theme.css" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light" id="navbar_top">
+      <div class="container">
+        <a class="navbar-brand navbar-logo" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="study-material.html">Study materials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <!-- <div class="d-flex"> -->
+          <a href="login.html" class="site-btn">Register/Login</a>
+          <!-- </div> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="banner-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="banner-txt position-relative">
+              <span>Specialization over generalization</span>
+              <h1 class="banner-title">Master Math's with Ease & Precision!</h1>
+              <p class="banner-subtitle">Your one-stop solution for mastering mathematics</p>
+
+              <h5>Live Interactive Classes</h5>
+              <a href="#"><img src="assets/images/icons/download.svg" alt="">Download Brochure</a>
+              <div class="man-img">
+                <img src="assets/images/bnr-man.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="banner-form bg-light p-4 rounded shadow">
+              <h3 class="fw-bold">Register for Masterclass</h3>
+              <p>Join the exclusive Masterclass and take your skills to the next level</p>
+              <form>
+                <div class="mb-3">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required autocomplete>
+                </div>
+                <div class="mb-3">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email Address" required
+                    autocomplete>
+                </div>
+                <div class="mb-3">
+                  <input type="tel" id="phone" name="phone" class="form-control" placeholder="Ex: +918888888888"
+                    required autocomplete>
+                </div>
+                <div class="mb-3">
+                  <select class="form-select" required>
+                    <option value="" disabled selected>Select Course</option>
+                    <option value="math1">Math 1</option>
+                    <option value="math2">Math 2</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn site-btn">
+                  Register for Masterclass <i class="fas fa-arrow-right ms-2"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="about-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="assets/images/students.png" class="img-fluid rounded" alt="Empowering Students">
+          </div>
+          <div class="col-md-6">
+            <h2>Empowering Students with Mathematical Excellence!</h2>
+            <p>
+              At Maths Guruji, we believe that mathematics is not just a subject but a skill that shapes future
+              innovators and problem solvers.
+              With over 15 years of experience, we have helped thousands of students master the art of numbers, logic,
+              and problem-solving
+              through structured learning, expert guidance, and practical techniques.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="course-cards-section">
+      <div class="container py-5">
+        <h2 class="text-center mb-4">Popular Courses</h2>
+
+        <div class="d-flex flex-wrap justify-content-start filter-buttons">
+          <button class="btn btn-dark" data-filter="all">All Courses</button>
+          <button class="btn btn-outline-dark" data-filter="mathematics">Mathematics</button>
+          <button class="btn btn-outline-dark" data-filter="cbse">CBSE</button>
+          <button class="btn btn-outline-dark" data-filter="jee">JEE & Competitive Exams</button>
+          <button class="btn btn-outline-dark" data-filter="vedic">Vedic</button>
+          <button class="btn btn-outline-dark" data-filter="data-science">Data Science</button>
+          <a href="#" class="site-btn">View All</a>
+        </div>
+
+        <div class="row">
+          <!-- Each card below includes a data-category for filtering -->
+
+          <div class="col-md-4 course-item" data-category="jee mathematics">
+            <div class="course-card">
+              <div class="course-imgsec position-relative">
+                <img src="assets/images/popular1.png" alt="Course Image">
+                <div class="position-absolute avatar-sec">
+                  <div class="d-flex me-2">
+                    <img src="assets/images/Blink.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink1.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink3.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink4.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/blink5.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                  </div>
+                  <span>+ 40 students</span>
+                </div>
+              </div>
+              <div class="course-text">
+                <div class="duration mb-1"><i class="fas fa-clock me-1 text-primary"></i> Duration: 2 Months</div>
+                <h4 class="course-title text-primary">JEE Advanced Mathematics Mastery</h4>
+                <div class="course-det">
+                  <p>In-depth coverage of Calculus, Algebra, Trigonometry, and Coordinate Geometry. Advanced
+                    problem-solving strategies and shortcut techniques. Live doubt-solving sessions with expert tutors.
+                  </p>
+                </div>
+                <div class="mt-2"><span class="price">₹9,999</span><span class="original-price">₹15,000</span></div>
+                <button class="site-btn">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 course-item" data-category="cbse mathematics">
+            <div class="course-card">
+              <div class="course-imgsec position-relative">
+                <img src="assets/images/popular2.png" alt="Course Image">
+                <div class="position-absolute avatar-sec">
+                  <div class="d-flex me-2">
+                    <img src="assets/images/Blink.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink1.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink3.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink4.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/blink5.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                  </div>
+                  <span>+ 40 students</span>
+                </div>
+              </div>
+              <div class="course-text">
+                <div class="duration mb-1"><i class="fas fa-clock me-1 text-primary"></i> Duration: 2 Months</div>
+                <h4 class="course-title text-primary">CBSE Class 10 Mathematics</h4>
+                <div class="course-det">
+                  <p>Comprehensive coverage of the CBSE syllabus with interactive sessions and practice tests to ensure
+                    success.</p>
+                </div>
+                <div class="mt-2"><span class="price">₹2,999</span><span class="original-price">₹5,000</span></div>
+                <button class="site-btn">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 course-item" data-category="vedic mathematics">
+            <div class="course-card">
+              <div class="course-imgsec position-relative">
+                <img src="assets/images/popular3.png" alt="Course Image">
+                <div class="position-absolute avatar-sec">
+                  <div class="d-flex me-2">
+                    <img src="assets/images/Blink.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink1.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink3.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink4.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/blink5.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                  </div>
+                  <span>+ 40 students</span>
+                </div>
+              </div>
+              <div class="course-text">
+                <div class="duration mb-1"><i class="fas fa-clock me-1 text-primary"></i> Duration: 2 Months</div>
+                <h4 class="course-title text-primary">Vedic Mathematics</h4>
+                <div class="course-det">
+                  <p>Learn ancient techniques to solve mathematical problems faster and more efficiently.</p>
+                </div>
+                <div class="mt-2"><span class="price">₹7,499</span><span class="original-price">₹9,000</span></div>
+                <button class="site-btn">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 course-item" data-category="jee mathematics">
+            <div class="course-card">
+              <div class="course-imgsec position-relative">
+                <img src="assets/images/popular4.png" alt="Course Image">
+                <div class="position-absolute avatar-sec">
+                  <div class="d-flex me-2">
+                    <img src="assets/images/Blink.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink1.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink3.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink4.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/blink5.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                  </div>
+                  <span>+ 40 students</span>
+                </div>
+              </div>
+              <div class="course-text">
+                <div class="duration mb-1"><i class="fas fa-clock me-1 text-primary"></i> Duration: 2 Months</div>
+                <h4 class="course-title text-primary">Competitive Exams Mathematics Crash Course</h4>
+                <div class="course-det">
+                  <p>Fast-paced course designed to prepare students for competitive exams with advanced techniques and
+                    strategies.</p>
+                </div>
+                <div class="mt-2"><span class="price">₹7,499</span><span class="original-price">₹8,500</span></div>
+                <button class="site-btn">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 course-item" data-category="mathematics">
+            <div class="course-card">
+              <div class="course-imgsec position-relative">
+                <img src="assets/images/popular5.png" alt="Course Image">
+                <div class="position-absolute avatar-sec">
+                  <div class="d-flex me-2">
+                    <img src="assets/images/Blink.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink1.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink3.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink4.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/blink5.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                  </div>
+                  <span>+ 40 students</span>
+                </div>
+              </div>
+              <div class="course-text">
+                <div class="duration mb-1"><i class="fas fa-clock me-1 text-primary"></i> Duration: 2 Months</div>
+                <h4 class="course-title text-primary">Live Masterclass - Mathematics Problem Solving</h4>
+                <div class="course-det">
+                  <p>Interactive sessions to master problem-solving techniques in mathematics.</p>
+                </div>
+                <div class="mt-2"><span class="price">₹999</span><span class="original-price">₹2,000</span></div>
+                <button class="site-btn">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 course-item" data-category="cbse mathematics">
+            <div class="course-card">
+              <div class="course-imgsec position-relative">
+                <img src="assets/images/popular6.png" class="w-100" alt="Course Image">
+                <div class="position-absolute avatar-sec">
+                  <div class="d-flex me-2">
+                    <img src="assets/images/Blink.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink1.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink3.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink4.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/blink5.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                  </div>
+                  <span>+ 40 students</span>
+                </div>
+              </div>
+              <div class="course-text">
+                <div class="duration mb-1"><i class="fas fa-clock me-1 text-primary"></i> Duration: 2 Months</div>
+                <h4 class="course-title text-primary">Class 10 CBSE Mathematics</h4>
+                <div class="course-det">
+                  <p>Comprehensive coverage of CBSE syllabus with interactive sessions and practice tests.</p>
+                </div>
+                <div class="mt-2"><span class="price">₹4,999</span><span class="original-price">₹6,000</span></div>
+                <button class="site-btn">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 course-item" data-category="vedic mathematics">
+            <div class="course-card">
+              <div class="course-imgsec position-relative">
+                <img src="assets/images/popular7.png" class="w-100" alt="Course Image">
+                <div class="position-absolute avatar-sec">
+                  <div class="d-flex me-2">
+                    <img src="assets/images/Blink.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink1.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink3.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink4.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/blink5.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                  </div>
+                  <span>+ 40 students</span>
+                </div>
+              </div>
+              <div class="course-text">
+                <div class="duration mb-1"><i class="fas fa-clock me-1 text-primary"></i> Duration: 2 Months</div>
+                <h4 class="course-title text-primary">Vedic Mathematics</h4>
+                <div class="course-det">
+                  <p>Learn ancient techniques to solve mathematical problems faster and more efficiently.</p>
+                </div>
+                <div class="mt-2"><span class="price">₹7,499</span><span class="original-price">₹9,000</span></div>
+                <button class="site-btn">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 course-item" data-category="data-science mathematics">
+            <div class="course-card">
+              <div class="course-imgsec position-relative">
+                <img src="assets/images/popular8.png" class="w-100" alt="Course Image">
+                <div class="position-absolute avatar-sec">
+                  <div class="d-flex me-2">
+                    <img src="assets/images/Blink.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink1.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink3.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/Blink4.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                    <img src="assets/images/blink5.png" class="rounded-circle me-n1 border border-white" width="30"
+                      height="30" />
+                  </div>
+                  <span>+ 40 students</span>
+                </div>
+              </div>
+              <div class="course-text">
+                <div class="duration mb-1"><i class="fas fa-clock me-1 text-primary"></i> Duration: 2 Months</div>
+                <h4 class="course-title text-primary">Mathematics for Data Science</h4>
+                <div class="course-det">
+                  <p>Learn essential mathematical concepts for data science, including statistics and linear algebra.
+                  </p>
+                </div>
+                <div class="mt-2"><span class="price">₹10,999</span><span class="original-price">₹15,000</span></div>
+                <button class="site-btn">Free Trial</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="consult-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="">Still confused about your career choice? consult with our experts</h2>
+            <a href="contact.html" class="site-btn">Contact Us</a>
+          </div>
+          <div class="col-md-6 position-relative">
+            <img src="assets/images/confusedsec-lady.png" class="consult-img" alt="Career Consultation">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why-join-section py-5">
+      <div class="container">
+        <h2 class="text-center">Why Join this Program?</h2>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card text-center p-4 ">
+              <div class="card-icon mb-3">
+                <img src="assets/images/User Hand Up.png" alt="">
+              </div>
+              <h4 class="card-title">Expert Guidance</h4>
+              <p class="card-text">
+                Learn from experienced educators who specialize in simplifying complex mathematical concepts.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card text-center p-4 ">
+              <div class="card-icon mb-3">
+                <img src="assets/images/Suitcase.png" alt="">
+              </div>
+              <h4 class="card-title">Comprehensive Resources</h4>
+              <p class="card-text">
+                Access structured learning materials, practice tests, and interactive sessions to enhance your skills.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card text-center p-4 ">
+              <div class="card-icon mb-3">
+                <img src="assets/images/User Speak Rounded.png" alt="">
+              </div>
+              <h4 class="card-title">Proven Results</h4>
+              <p class="card-text">
+                Join thousands of successful students who have achieved excellence in mathematics through our programs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="latest-blogs-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Latest Blogs</h2>
+        <div class="row">
+          <!-- Blog Block 1 -->
+          <div class="col-md-3">
+            <div class="blog-card">
+              <div class="blog-img">
+                <img src="assets/images/latest-blog1.png" alt="Blog Image" class="img-fluid rounded">
+              </div>
+              <div class="blog-text">
+                <div class="blog-date mb-2">
+                  <i class="fas fa-calendar-alt me-1 text-primary"></i> 10th February 2025
+                </div>
+                <h4 class="blog-title">JEE Advanced 2025 – Exam Pattern & Preparation Strategy!</h4>
+                <p class="blog-description">
+                  The JEE Advanced 2025 exam is approaching! This blog covers the latest exam pattern..
+                  <span class="read-more"
+                    data-short-text="The JEE Advanced 2025 exam is approaching! This blog covers the latest exam pattern.."
+                    data-full-text="The JEE Advanced 2025 exam is approaching! This blog covers the latest exam pattern and preparation strategies to help you excel.">Read
+                    More</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Block 2 -->
+          <div class="col-md-3">
+            <div class="blog-card">
+              <div class="blog-img">
+                <img src="assets/images/latest-blog2.png" alt="Blog Image" class="img-fluid rounded">
+              </div>
+              <div class="blog-text">
+                <div class="blog-date mb-2">
+                  <i class="fas fa-calendar-alt me-1 text-primary"></i> 5th February 2025
+                </div>
+                <h4 class="blog-title">5 Proven Tricks to Solve Integration in Seconds!</h4>
+                <p class="blog-description">
+                  Struggling with integration? Master these five shortcut techniques..
+                  <span class="read-more"
+                    data-short-text="Struggling with integration? Master these five shortcut techniques.."
+                    data-full-text="Struggling with integration? Master these five shortcut techniques to solve integration problems quickly and accurately.">Read
+                    More</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Block 3 -->
+          <div class="col-md-3">
+            <div class="blog-card">
+              <div class="blog-img">
+                <img src="assets/images/latest-blog3.png" alt="Blog Image" class="img-fluid rounded">
+              </div>
+              <div class="blog-text">
+                <div class="blog-date mb-2">
+                  <i class="fas fa-calendar-alt me-1 text-primary"></i> 10th February 2025
+                </div>
+                <h4 class="blog-title">CBSE Class 10 Math's – Last-Minute Revision Plan</h4>
+                <p class="blog-description">
+                  Class 10 CBSE Board Exams are around the corner! This 7-day revision strategy..
+                  <span class="read-more"
+                    data-short-text="Class 10 CBSE Board Exams are around the corner! This 7-day revision strategy.."
+                    data-full-text="Class 10 CBSE Board Exams are around the corner! This 7-day revision strategy will help you cover all important topics effectively.">Read
+                    More</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Block 4 -->
+          <div class="col-md-3">
+            <div class="blog-card">
+              <div class="blog-img">
+                <img src="assets/images/latest-blog4.png" alt="Blog Image" class="img-fluid rounded">
+              </div>
+              <div class="blog-text">
+                <div class="blog-date mb-2">
+                  <i class="fas fa-calendar-alt me-1 text-primary"></i> 10th February 2025
+                </div>
+                <h4 class="blog-title">Why Vedic Mathematics is a Must-Learn Skill!</h4>
+                <p class="blog-description">
+                  Want to boost your mental math speed? Learn how Vedic Maths techniques can help..
+                  <span class="read-more"
+                    data-short-text="Want to boost your mental math speed? Learn how Vedic Maths techniques can help.."
+                    data-full-text="Want to boost your mental math speed? Learn how Vedic Maths techniques can help you solve problems faster and improve accuracy.">Read
+                    More</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="text-center mt-4">
+              <a href="#" class="site-btn">View All Posts</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="students-say-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">What Our Students Say</h2>
+        <div class="row" data-masonry='{"percentPosition": true }'>
+          <!-- Review 1 -->
+          <div class="col-md-4">
+            <div class="review-card">
+              <h4 class="review-title">Best JEE Mathematics Coaching!</h4>
+              <p class="review-text">Great and very comprehensive course, easy to follow guidelines.</p>
+              <div class="review-rating mt-2">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star-half-alt text-warning"></i>
+                <span>(4.5/5)</span>
+              </div>
+              <div class="review-author mt-3 d-flex align-items-center">
+                <div class="author-circle me-2">AS</div>
+                <span>Amit Sharma, JEE 2024 AIR 278</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="col-md-4">
+            <div class="review-card">
+              <h4 class="review-title">Perfect for Competitive Exams!</h4>
+              <p class="review-text">The crash course on quantitative aptitude helped me clear SSC CGL Prelims. The way
+                Maths Guruji explains concepts is just next level!</p>
+              <div class="review-rating mt-2">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <div class="review-author mt-3 d-flex align-items-center">
+                <div class="author-circle me-2">AS</div>
+                <span>Amit Sharma, JEE 2024 AIR 278</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="col-md-4">
+            <div class="review-card">
+              <h4 class="review-title">Best Guidance for Board Exams!</h4>
+              <p class="review-text">The Class 10 math course helped me understand every concept in depth. The
+                chapter-wise tests and detailed solutions were super helpful!</p>
+              <div class="review-rating mt-2">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <div class="review-author mt-3 d-flex align-items-center">
+                <div class="author-circle me-2">AM</div>
+                <span>Ananya Mishra, Class 10 Student</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="col-md-4">
+            <div class="review-card">
+              <h4 class="review-title">CBSE Class 12 Made Easy!</h4>
+              <p class="review-text">I was struggling with integration and probability, but after joining this course,
+                everything became clear. I scored 98% in my CBSE Class 12 Board Exam!</p>
+              <div class="review-rating mt-2">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <div class="review-author mt-3 d-flex align-items-center">
+                <div class="author-circle me-2">PV</div>
+                <span>Priya Verma, CBSE 2024 Topper</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Review 5 -->
+          <div class="col-md-4">
+            <div class="review-card">
+              <h4 class="review-title">Best JEE Mathematics Coaching!</h4>
+              <p class="review-text">Great and very comprehensive course, easy to follow guidelines.</p>
+              <div class="review-rating mt-2">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <div class="review-author mt-3 d-flex align-items-center">
+                <div class="author-circle me-2">SD</div>
+                <span>Sonia Das, SSC CGL Candidate</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Review 6 -->
+          <div class="col-md-4">
+            <div class="review-card">
+              <h4 class="review-title">Math for Data Science is a Game-Changer!</h4>
+              <p class="review-text">I wanted to understand the math behind AI and ML. This course gave me a strong
+                foundation in statistics, probability, and linear algebra!</p>
+              <div class="review-rating mt-2">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <div class="review-author mt-3 d-flex align-items-center">
+                <div class="author-circle me-2">HM</div>
+                <span>Harsh Mehta, Data Science Enthusiast</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Review 7 -->
+          <div class="col-md-4">
+            <div class="review-card">
+              <h4 class="review-title">Vedic Maths Transformed My Speed!</h4>
+              <p class="review-text">Mental calculations used to be my weakness. Thanks to Maths Guruji’s Vedic Maths
+                course, I can now do complex calculations in seconds!</p>
+              <div class="review-rating mt-2">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <div class="review-author mt-3 d-flex align-items-center">
+                <div class="author-circle me-2">RN</div>
+                <span>Rahul Nair, Banking Exam Aspirant</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Review 8 -->
+          <div class="col-md-4">
+            <div class="review-card">
+              <h4 class="review-title">Masterclass That Changed My Approach!</h4>
+              <p class="review-text">The live masterclass was an eye-opener! It gave me new techniques and a structured
+                approach to solving difficult math problems effortlessly.</p>
+              <div class="review-rating mt-2">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <div class="review-author mt-3 d-flex align-items-center">
+                <div class="author-circle me-2">VR</div>
+                <span>Vivek Ranjan, IIT Aspirant</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Review 9 -->
+          <div class="col-md-4">
+            <div class="review-card">
+              <h4 class="review-title">Vedic Maths Transformed My Speed!</h4>
+              <p class="review-text">Mental calculations used to be my weakness. Thanks to Maths Guruji’s Vedic Maths
+                course, I can now do complex calculations in seconds!</p>
+              <div class="review-rating mt-2">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <div class="review-author mt-3 d-flex align-items-center">
+                <div class="author-circle me-2">RN</div>
+                <span>Rahul Nair, Banking Exam Aspirant</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How to enroll for a Course?</span>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer">
+              <p>You can enroll for a course by visiting our website, selecting your desired course, and completing the
+                registration process.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can I get the recordings of my previous lectures?</span>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, all enrolled students will have access to the recordings of their previous lectures for revision
+                purposes.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Who would be the instructor for enrolled course?</span>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Our courses are taught by experienced instructors who are experts in their respective fields.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What kind of placement support will be given post completion of program?</span>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer">
+              <p>We provide placement assistance, including resume building, interview preparation, and connecting you
+                with potential employers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="section footer-sec">
+    <div class="container">
+      <div class="footer-qlsec">
+        <div class="row justify-content-between">
+          <!-- Column 1 -->
+          <div class="col-md-3">
+            <div class="ftr-ql">
+              <a href="index.html" class="navbar-logo"><img src="assets/images/footer-logo.png" alt=""></a>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+              <div class="social-links mt-3">
+                <a href="https://facebook.com" target="_blank" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="me-3"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="me-3"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-md-3">
+            <div class="ftr-ql">
+              <h4>Explore</h4>
+              <ul>
+                <li><i class="fa-solid fa-angles-right me-2"></i><a href="about-us.html">About Us</a></li>
+                <li><i class="fa-solid fa-angles-right me-2"></i><a href="study-material.html">Study Materials</a></li>
+                <li><i class="fa-solid fa-angles-right me-2"></i><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-md-3">
+            <div class="ftr-ql">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="fa-solid fa-angles-right me-2"></i><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><i class="fa-solid fa-angles-right me-2"></i><a href="terms-of-use.html">Terms of Use</a></li>
+                <li><i class="fa-solid fa-angles-right me-2"></i><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-md-3">
+            <div class="ftr-ql">
+              <h4>Contact Info</h4>
+              <ul>
+                <li><i class="fas fa-map-marker-alt me-2"></i>71, AJC Bose Road, Kolkata, India</li>
+                <li><i class="fas fa-phone-alt me-2"></i>+91-9874123456</li>
+                <li><i class="fas fa-envelope me-2"></i><a href="mailto:mathguruji@gmail.com">mathguruji@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copysec text-center mt-4">
+        <p>Copyright © 2025 MathGuruji. All Rights Reserved.</p>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/slick.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    async></script>
+</body>
+
+</html>
